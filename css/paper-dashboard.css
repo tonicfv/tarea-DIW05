@@ -4238,6 +4238,15 @@ License - nucleoapp.com/license/
   padding-top:0.4em;
 
 }
+.ptab {
+  margin:0.2em 0.1em;
+  padding: 0;
+}
+.pleft {
+  
+  padding-left: 2.0rem;
+  margin-left: 2.0rem;
+}
 
 .pad {
   line-height: 2.2em;
