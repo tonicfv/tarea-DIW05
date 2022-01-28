@@ -4206,6 +4206,12 @@ License - nucleoapp.com/license/
     flex-direction: column; }
     .card-contributions .card-stats .bootstrap-switch {
       margin-bottom: 15px; }
+    .card-title {
+      font-size: 0.8em; }
+    .card-category {
+      font-size: 0.7em;
+    }
+
   .footer .copyright {
     text-align: center; }
   .section-nucleo-icons .icons-container i {
@@ -4217,5 +4223,27 @@ License - nucleoapp.com/license/
   .card-timeline .timeline .timeline-panel {
     width: 38%;
     padding: 15px; } }
+
+
+.peq {
+  font-size: 0.8rem;
+
+}
+.peqm {
+  font-size: 0.7rem;
+
+}
+
+.pad {
+  line-height: 2.2em;
+  color: #00bbff;
+}
+.colred {
+  color: #eb6532;
+}
+
+.cardy {
+  background-color: #f4f4f4 !important;
+}
 
 /*# sourceMappingURL=paper-dashboard.css.map */
