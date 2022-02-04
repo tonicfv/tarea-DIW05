@@ -2,49 +2,29 @@
 body {
     background: #F4F3EF;
     background: linear-gradient(to right, #F4F3EF, #e8e5db);
-    
+  }
 
-  }
-  
-  .card-img-left {
-    width: 45%;
-    /* Link to your background image using in the property below! */
-    background: scroll center url("../img/login.svg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  
-  .btn-login {
-    font-size: 0.9rem;
-    letter-spacing: 0.05rem;
-    padding: 0.75rem 1rem;
-  }
-  
-  .btn-google {
-    color: white !important;
-    background-color: #ea4335;
-  }
-  
-  .btn-facebook {
-    color: white !important;
-    background-color: #3b5998;
-  }
-  .img {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center; 
-    background-image: url("../img/login.svg");
-  }
-  .cver {
-    height: 200px;
-  }
-  .bg-login {
-    background-image: url("../img/login.svg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
+/* imagen lateral para resoluciones desktop */
+
+.bg-login {
+  background-image: url("../img/login.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
+
+/* imagen superior para resoluciones pequeñas */
+.img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; 
+  background-image: url("../img/login.svg");
+}
+.cver {
+  height: 200px;
+}
+
+/* Color botones */
 .bg-info2 {
   background-color: #40ADBA !important;
 }

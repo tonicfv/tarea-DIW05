@@ -8,8 +8,10 @@
     <link rel="icon" type="image/png" href="img/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Antonio José Martinez para DIW05" />
-    <link rel="stylesheet" href="css/bootstrap5.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap5.css">
     <link rel="stylesheet" href="css/main.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap"
@@ -17,18 +19,20 @@
 </head>
 
 <body>
-         <!-- contenedor principal -->
+    <!-- contenedor principal -->
     <div class="container w-75 bg-white mt-5 rounded-3 shadow">
         <div class="row ">
             <!-- ocultamos este div para resoluciones pequeñas -->
             <div class="d-none d-lg-block col bg-login my-5 my-sm-1 mx-2">
             </div>
-            <div class="img cver d-lg-none"></div>
+            <!-- ocultamos este div para resoluciones desktop -->
+            <div class="img cver d-lg-none">
+            </div>
+            <!-- Main formulario responsive -->
             <div class="col py-sm-1 py-lg-5">
                 <h2 class="fw-bold text-center  py-sm-1 py-lg-5">Bienvenidos</h2>
-                <form class="form-control-sm" action="./test.html">
+                <form class="form-control-sm" action="./dashboard.html">
                     <div class="mb-4 mx-4 form-group row">
-                   
                         <input class="form-control form-control-sm" type="email" class="form-control" name="email"
                             placeholder="Correo eléctronico">
                     </div>
@@ -58,7 +62,9 @@
                         </div>
                 </form>
             </div>
+            <!-- Fin Main formulario -->
         </div>
     </div>
+    <!-- Fin contenedor principal -->
 </body>
 </html>

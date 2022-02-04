@@ -1,14 +1,15 @@
 <!--
 =========================================================
+* Theme usado:
 * Paper Dashboard 2 - v2.0.1
 =========================================================
 * Copyright 2020 Creative Tim 
-Coded by www.creative-tim.com
+* Coded by www.creative-tim.com
  =========================================================
 
 -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8" />
@@ -19,21 +20,25 @@ Coded by www.creative-tim.com
   <title>
     Dshboard Gesti&oacute;n de usuarios
   </title>
-  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+    name='viewport' />
   <!--     Fuentes e Iconos     -->
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
   <!-- CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/bootstrap5.css" rel="stylesheet" />
   <link href="css/paper-dashboard.css" rel="stylesheet" />
 
 </head>
 
 <body>
-<!-- Contenedor principal  -->
+  <!-- Contenedor principal  -->
   <div class="wrapper ">
-      <!-- Barra lateral -->
+    <!-- Barra lateral -->
     <div class="sidebar" data-color="white" data-active-color="danger">
       <div class="logo">
         <a href="#" class="simple-text logo-mini">
@@ -83,7 +88,7 @@ Coded by www.creative-tim.com
               <p>Cerrar sesi&oacute;n</p>
             </a>
           </li>
-          
+
         </ul>
       </div>
     </div>
@@ -94,7 +99,7 @@ Coded by www.creative-tim.com
       <nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent">
         <div class="container-fluid">
           <div class="navbar-wrapper">
-            <!-- botón hamburguesa para resoluciones pequeñas -->
+            <!-- botón hamburguesa en togglr para resoluciones pequeñas -->
             <div class="navbar-toggle">
               <button type="button" class="navbar-toggler">
                 <span class="navbar-toggler-bar bar1"></span>
@@ -106,7 +111,7 @@ Coded by www.creative-tim.com
           </div>
 
           <div class="collapse navbar-collapse justify-content-end" id="navigation">
-                  <!-- Barra búsqueda -->
+            <!-- Barra búsqueda -->
             <form>
               <div class="input-group no-border">
                 <input type="text" value="" class="form-control" placeholder="Buscar...">
@@ -117,16 +122,17 @@ Coded by www.creative-tim.com
                 </div>
               </div>
             </form>
-            
+
           </div>
         </div>
       </nav>
-      <!-- End Barra  superior -->
+      <!-- Fin Barra  Superior -->
 
-      <!-- Cards-->
+      <!-- Empiezan las Cards responsive -->
 
       <div class="content">
         <div class="row">
+          <!-- Targeta 1 -->
           <div class="col-lg-4 col-md-4 col-sm-4">
             <div class="card card-stats">
               <div class="card-body ">
@@ -148,20 +154,19 @@ Coded by www.creative-tim.com
                 <hr>
                 <div class="stats">
                   <i class="fa fa-calendar-o"></i>
-               Anual
+                  Anual
                 </div>
               </div>
             </div>
           </div>
+          <!-- Targeta 2 -->
           <div class="col-lg-4 col-md-4 col-sm-4 ">
             <div class="card card-stats">
               <div class="card-body ">
                 <div class="row">
                   <div class="col-5 col-md-4">
                     <div class="icon-big text-center icon-warning">
-                      <!-- <i class="nc-icon nc-vector text-danger"></i> -->
                       <i class="fas fa-donate text-danger"></i>
-
                     </div>
                   </div>
                   <div class="col-7 col-md-8">
@@ -181,6 +186,7 @@ Coded by www.creative-tim.com
               </div>
             </div>
           </div>
+          <!-- Targeta 3 -->
           <div class="col-lg-4 col-md-4 col-sm-4">
             <div class="card card-stats">
               <div class="card-body ">
@@ -208,15 +214,15 @@ Coded by www.creative-tim.com
             </div>
           </div>
         </div>
+       <!-- Terminan las Cards responsive -->
 
+        <!-- Empieza Tabla, oculta en dispositivos de resoluciones inferiores a <576px-->
 
-      <!-- tabla inicio -->
-
-      <div class="row">
+        <div class="row d-none d-sm-table-cell">
           <div class="col-md-12">
             <div class="card">
               <div class="card-header">
-                <h4 class="card-title"> Productos</h4>
+                <h5 class="card-title"> Productos</h5>
               </div>
               <div class="card-body">
                 <div class="table-responsive">
@@ -348,13 +354,160 @@ Coded by www.creative-tim.com
             </div>
           </div>
         </div>
-      <!-- tabla final -->
+        <!-- Final Tabla  -->
 
+
+        <!-- Empieza acordeon de productos visible en resoluciones superiores a <576px -->
+        <div class="d-block d-sm-none card">
+          <div id="accordion" role="tablist">
+            <div class="card" role="presentation">
+              <div class="card-header mx-auto" role="tab" id="headingOne">
+                <h3>Productos </h3>
+                <h6 class="mb-0">
+                  <a data-bs-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <button type="submit" class="btn btn-primary btn-round btn-sm pl-5">Smartphone</button>
+                  </a>
+                </h6>
+              </div>
+            <div id="collapseOne" class="collapse show" data-bs-parent="#accordion" role="tabpanel" aria-labelledby="headingOne">
+              <!-- Cuerpo de Categoría 1 de productos -->
+              <div class="card-body">
+                <div class="row flex">
+                  <div class="col-4">
+                    <img src="img/xiaomi.png">
+                  </div>
+                  <div class="col-8">
+                    <p class="ptab"><span class="peqm">Ventas:</span> <span class="pad">1232 </span></p>
+                    <p class="ptab"><span class="peqm">Codigo:</span> <span class="pad">299423</span></p>
+                    <p class="ptab"><span class="peqm"> Precio:</span> <span class="colred"> 250,25€</span></p>
+                  </div>
+                  <div class="row justify-content-center">
+                    <div class="col-9 mr-auto mt-3">
+                    <p class="peqmp"><span>Xiaomi Redmi Note 9 Pro 6/64GB Verde Tropical</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Fin Categoría 1 de productos -->
+            </div>
+          </div>
+          <div class="card" role="presentation">
+            <div class="card-header mx-auto" role="tab" id="headingTwo">
+              <h6 class="mb-0">
+                <a class="collapsed" data-bs-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <button type="submit" class="btn btn-primary btn-round btn-sm">Monitores</button>
+                </a>
+              </h6>
+            </div>
+            <div id="collapseTwo" class="collapse" data-bs-parent="#accordion" role="tabpanel" aria-labelledby="headingTwo">
+               <!-- Cuerpo de Categoría 2 de productos -->
+              <div class="card-body">
+                <div class="row flex">
+                  <div class="col-4">
+                    <img src="img/pantalla.png">
+                  </div>
+                  <div class="col-8">
+                    <p class="ptab"><span class="peqm">Ventas:</span> <span class="pad">1000 </span></p>
+                    <p class="ptab"><span class="peqm">Codigo:</span> <span class="pad">414013</span></p>
+                    <p class="ptab"><span class="peqm"> Precio:</span> <span class="colred"> 243,98€</span></p>
+                  </div>
+                  <div class="row justify-content-center">
+                    <div class="col-9 mr-auto mt-3">
+                    <p class="peqmp"><span>NewSkill Icarus RGB 27" LED Fast IPS QHD 180Hz G-Sync Compatible </span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Fin Categoría 2 de productos -->
+            </div>
+          </div>
+          <div class="card" role="presentation">
+            <div class="card-header mx-auto" role="tab" id="headingThree">
+              <h6 class="mb-0">
+                <a class="collapsed" data-bs-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                   <button type="submit" class="btn btn-primary btn-round btn-sm">Perifericos</button>
+                </a>
+              </h6>
+            </div>
+            <div id="collapseThree" class="collapse" data-bs-parent="#accordion" role="tabpanel" aria-labelledby="headingThree">
+              <!-- Cuerpo de Categoría 3 de productos -->
+              <div class="card-body">
+                <div class="row flex">
+                  <div class="col-4">
+                    <img src="img/mouse.png">
+                  </div>
+                  <div class="col-8">
+                    <p class="ptab"><span class="peqm">Ventas:</span> <span class="pad">855 </span></p>
+                    <p class="ptab"><span class="peqm">Codigo:</span> <span class="pad"> 433507 </span></p>
+                    <p class="ptab"><span class="peqm"> Precio:</span> <span class="colred"> 49,99€</span></p>
+                  </div>
+                  <div class="row justify-content-center">
+                    <div class="col-9 mr-auto mt-3">
+                    <p class="peqmp"><span>Tempest X20W Vigilant Raton Gaming Inalámbrico </span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown-divider"></div>
+
+                <div class="row flex">
+                  <div class="col-4">
+                    <img src="img/webcam.png">
+                  </div>
+                  <div class="col-8">
+                    <p class="ptab"><span class="peqm">Ventas:</span> <span class="pad">711 </span></p>
+                    <p class="ptab"><span class="peqm">Codigo:</span> <span class="pad">258324</span></p>
+                    <p class="ptab"><span class="peqm"> Precio:</span> <span class="colred"> 75,99€</span></p>
+                  </div>
+                  <div class="row justify-content-center">
+                    <div class="col-9 mr-auto mt-3">
+                    <p class="peqmp"><span>Logitech C920s Pro Webcam </span></p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <!-- Fin Categoría 3 de productos -->
+            </div>
+          </div>
+  
+          <div class="card" role="presentation">
+            <div class="card-header mx-auto" role="tab" id="headingFour">
+              <h6 class="mb-0">
+                <a class="collapsed" data-bs-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                   <button type="submit" class="btn btn-primary btn-round btn-sm">Componentes</button>
+                </a>
+              </h6>
+            </div>
+            <div id="collapseFour" class="collapse" data-bs-parent="#accordion" role="tabpanel" aria-labelledby="headingThree">
+               <!-- Cuerpo de Categoría 3 de productos -->
+              <div class="card-body">
+                <div class="row flex">
+                  <div class="col-4">
+                    <img src="img/torre.png">
+                  </div>
+                  <div class="col-8">
+                    <p class="ptab"><span class="peqm">Ventas:</span> <span class="pad">425 </span></p>
+                    <p class="ptab"><span class="peqm">Codigo:</span> <span class="pad">386825</span></p>
+                    <p class="ptab"><span class="peqm"> Precio:</span> <span class="colred"> 56,99€</span></p>
+                  </div>
+                  <div class="row justify-content-center">
+                    <div class="col-9 mr-auto mt-3">
+                    <p class="peqmp"><span>Tempest Vapor USB 3.0 Ventana RGB Negro </span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Fin Categoría 3 de productos -->
+            </div>
+          </div>
+               <!-- Termina acordeon -->
+
+            </div>
+        </div>
       </div>
 
-
-        <!-- Pie de pagina -->
-        <footer class="footer footer-black  footer-white fn ">
+      <!-- Pie de pagina -->
+      <footer class="footer footer-black  footer-white fn ">
           <div class="container-fluid">
             <div class="row justify-content-center">
               <nav class="footer-nav col-lg-auto">
@@ -366,17 +519,21 @@ Coded by www.creative-tim.com
               </nav>
             </div>
           </div>
-        </footer>
+      </footer>
+      <!--   final Pie de pagina -->
     </div>
-    <!--   final Panel central -->
+      <!--   final Panel central -->
 
   </div>
-<!--   final wrapper  -->
+  <!--   Final Wrapper (Contenedor Principal) -->
 
   <!--   JS Files   Para el menú haburguesa desplegable en resoluciones pequeñas-->
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/paper-dashboard.js" type="text/javascript"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/paper-dashboard.js" type="text/javascript"></script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
 
 </body>
 </html>
